@@ -1,0 +1,99 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 75
+Relation:     WA_Fn-UseC_-Telco-Customer-Churn-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.RemovePercentage-P10.0
+Instances:    6339
+Attributes:   20
+              gender
+              SeniorCitizen
+              Partner
+              Dependents
+              tenure
+              PhoneService
+              MultipleLines
+              InternetService
+              OnlineSecurity
+              OnlineBackup
+              DeviceProtection
+              TechSupport
+              StreamingTV
+              StreamingMovies
+              Contract
+              PaperlessBilling
+              PaymentMethod
+              MonthlyCharges
+              TotalCharges
+              Churn
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Contract = Month-to-month
+|   InternetService = DSL
+|   |   TotalCharges <= 310.6
+|   |   |   OnlineSecurity = No
+|   |   |   |   PhoneService = No: Yes (123.0/46.0)
+|   |   |   |   PhoneService = Yes
+|   |   |   |   |   tenure <= 1: Yes (109.0/49.0)
+|   |   |   |   |   tenure > 1: No (125.0/54.0)
+|   |   |   OnlineSecurity = Yes: No (84.0/32.0)
+|   |   |   OnlineSecurity = No internet service: Yes (0.0)
+|   |   TotalCharges > 310.6: No (660.0/129.0)
+|   InternetService = Fiber optic
+|   |   tenure <= 14: Yes (888.0/267.0)
+|   |   tenure > 14
+|   |   |   tenure <= 51
+|   |   |   |   PaperlessBilling = Yes
+|   |   |   |   |   TechSupport = No
+|   |   |   |   |   |   MultipleLines = No phone service: Yes (0.0)
+|   |   |   |   |   |   MultipleLines = No: No (163.0/69.0)
+|   |   |   |   |   |   MultipleLines = Yes
+|   |   |   |   |   |   |   StreamingMovies = No: No (159.0/75.0)
+|   |   |   |   |   |   |   StreamingMovies = Yes: Yes (216.0/84.0)
+|   |   |   |   |   |   |   StreamingMovies = No internet service: Yes (0.0)
+|   |   |   |   |   TechSupport = Yes: No (129.0/47.0)
+|   |   |   |   |   TechSupport = No internet service: No (0.0)
+|   |   |   |   PaperlessBilling = No: No (171.0/57.0)
+|   |   |   tenure > 51: No (191.0/48.0)
+|   InternetService = No: No (465.0/93.0)
+Contract = One year: No (1319.0/142.0)
+Contract = Two year: No (1537.0/45.0)
+
+Number of Leaves  : 	19
+
+Size of the tree : 	31
+
+
+Time taken to build model: 0.09 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         568               80.6818 %
+Incorrectly Classified Instances       136               19.3182 %
+Kappa statistic                          0.4822
+Mean absolute error                      0.2797
+Root mean squared error                  0.3737
+Relative absolute error                 71.4885 %
+Root relative squared error             84.3283 %
+Total Number of Instances              704     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.897    0.439    0.848      0.897    0.872      0.485    0.826     0.912     No
+                 0.561    0.103    0.667      0.561    0.609      0.485    0.826     0.597     Yes
+Weighted Avg.    0.807    0.349    0.799      0.807    0.801      0.485    0.826     0.827     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 462  53 |   a = No
+  83 106 |   b = Yes
+

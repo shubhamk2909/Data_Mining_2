@@ -1,0 +1,580 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     WA_Fn-UseC_-Telco-Customer-Churn-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.RemovePercentage-P10.0
+Instances:    6339
+Attributes:   20
+              gender
+              SeniorCitizen
+              Partner
+              Dependents
+              tenure
+              PhoneService
+              MultipleLines
+              InternetService
+              OnlineSecurity
+              OnlineBackup
+              DeviceProtection
+              TechSupport
+              StreamingTV
+              StreamingMovies
+              Contract
+              PaperlessBilling
+              PaymentMethod
+              MonthlyCharges
+              TotalCharges
+              Churn
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Contract = Month-to-month
+|   InternetService = DSL
+|   |   TotalCharges <= 310.6
+|   |   |   SeniorCitizen <= 0
+|   |   |   |   OnlineSecurity = No
+|   |   |   |   |   TechSupport = No
+|   |   |   |   |   |   PaperlessBilling = Yes
+|   |   |   |   |   |   |   PhoneService = No
+|   |   |   |   |   |   |   |   MonthlyCharges <= 25
+|   |   |   |   |   |   |   |   |   MonthlyCharges <= 24.5: Yes (8.0/1.0)
+|   |   |   |   |   |   |   |   |   MonthlyCharges > 24.5: No (6.0/1.0)
+|   |   |   |   |   |   |   |   MonthlyCharges > 25: Yes (34.0/7.0)
+|   |   |   |   |   |   |   PhoneService = Yes
+|   |   |   |   |   |   |   |   MultipleLines = No phone service: Yes (0.0)
+|   |   |   |   |   |   |   |   MultipleLines = No
+|   |   |   |   |   |   |   |   |   tenure <= 3: Yes (67.0/28.0)
+|   |   |   |   |   |   |   |   |   tenure > 3: No (7.0/1.0)
+|   |   |   |   |   |   |   |   MultipleLines = Yes
+|   |   |   |   |   |   |   |   |   TotalCharges <= 50.15: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   TotalCharges > 50.15: Yes (11.0/3.0)
+|   |   |   |   |   |   PaperlessBilling = No
+|   |   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   |   Partner = Yes: No (5.0/1.0)
+|   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   gender = Female: No (16.0/5.0)
+|   |   |   |   |   |   |   |   |   gender = Male: Yes (13.0/3.0)
+|   |   |   |   |   |   |   PaymentMethod = Mailed check
+|   |   |   |   |   |   |   |   OnlineBackup = Yes: No (10.0/2.0)
+|   |   |   |   |   |   |   |   OnlineBackup = No
+|   |   |   |   |   |   |   |   |   MonthlyCharges <= 25.1: No (7.0)
+|   |   |   |   |   |   |   |   |   MonthlyCharges > 25.1
+|   |   |   |   |   |   |   |   |   |   PhoneService = No: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   PhoneService = Yes
+|   |   |   |   |   |   |   |   |   |   |   StreamingMovies = No
+|   |   |   |   |   |   |   |   |   |   |   |   MonthlyCharges <= 45.6
+|   |   |   |   |   |   |   |   |   |   |   |   |   TotalCharges <= 44.45: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   TotalCharges > 44.45: No (16.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MonthlyCharges > 45.6: Yes (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   StreamingMovies = Yes: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   StreamingMovies = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   OnlineBackup = No internet service: No (0.0)
+|   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic): No (7.0/3.0)
+|   |   |   |   |   |   |   PaymentMethod = Credit card (automatic)
+|   |   |   |   |   |   |   |   MonthlyCharges <= 44.3: No (3.0/1.0)
+|   |   |   |   |   |   |   |   MonthlyCharges > 44.3: Yes (7.0/2.0)
+|   |   |   |   |   TechSupport = Yes
+|   |   |   |   |   |   gender = Female
+|   |   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   |   OnlineBackup = Yes: No (2.0)
+|   |   |   |   |   |   |   |   OnlineBackup = No: Yes (9.0/2.0)
+|   |   |   |   |   |   |   |   OnlineBackup = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   PaymentMethod = Mailed check: No (9.0/2.0)
+|   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic): Yes (3.0/1.0)
+|   |   |   |   |   |   |   PaymentMethod = Credit card (automatic): Yes (1.0)
+|   |   |   |   |   |   gender = Male
+|   |   |   |   |   |   |   OnlineBackup = Yes
+|   |   |   |   |   |   |   |   MonthlyCharges <= 61.9: Yes (4.0)
+|   |   |   |   |   |   |   |   MonthlyCharges > 61.9: No (2.0)
+|   |   |   |   |   |   |   OnlineBackup = No: No (33.0/9.0)
+|   |   |   |   |   |   |   OnlineBackup = No internet service: No (0.0)
+|   |   |   |   |   TechSupport = No internet service: Yes (0.0)
+|   |   |   |   OnlineSecurity = Yes
+|   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   DeviceProtection = No
+|   |   |   |   |   |   |   PaperlessBilling = Yes
+|   |   |   |   |   |   |   |   Partner = Yes: No (3.0/1.0)
+|   |   |   |   |   |   |   |   Partner = No: Yes (10.0/1.0)
+|   |   |   |   |   |   |   PaperlessBilling = No
+|   |   |   |   |   |   |   |   tenure <= 2: No (5.0)
+|   |   |   |   |   |   |   |   tenure > 2: Yes (5.0/2.0)
+|   |   |   |   |   |   DeviceProtection = Yes: No (3.0)
+|   |   |   |   |   |   DeviceProtection = No internet service: No (0.0)
+|   |   |   |   |   PaymentMethod = Mailed check: No (38.0/11.0)
+|   |   |   |   |   PaymentMethod = Bank transfer (automatic): No (6.0)
+|   |   |   |   |   PaymentMethod = Credit card (automatic)
+|   |   |   |   |   |   gender = Female
+|   |   |   |   |   |   |   StreamingMovies = No: Yes (3.0)
+|   |   |   |   |   |   |   StreamingMovies = Yes: No (2.0)
+|   |   |   |   |   |   |   StreamingMovies = No internet service: Yes (0.0)
+|   |   |   |   |   |   gender = Male: No (2.0)
+|   |   |   |   OnlineSecurity = No internet service: No (0.0)
+|   |   |   SeniorCitizen > 0
+|   |   |   |   MonthlyCharges <= 29.7: Yes (14.0)
+|   |   |   |   MonthlyCharges > 29.7
+|   |   |   |   |   Dependents = No
+|   |   |   |   |   |   TechSupport = No
+|   |   |   |   |   |   |   tenure <= 5
+|   |   |   |   |   |   |   |   OnlineSecurity = No
+|   |   |   |   |   |   |   |   |   StreamingTV = No
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No
+|   |   |   |   |   |   |   |   |   |   |   |   TotalCharges <= 90.85: No (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalCharges > 90.85: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = Yes: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Mailed check
+|   |   |   |   |   |   |   |   |   |   |   MonthlyCharges <= 45.45: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   MonthlyCharges > 45.45: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic): No (1.0)
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Credit card (automatic): No (2.0/1.0)
+|   |   |   |   |   |   |   |   |   StreamingTV = Yes: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   StreamingTV = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   OnlineSecurity = Yes: Yes (5.0)
+|   |   |   |   |   |   |   |   OnlineSecurity = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   tenure > 5: No (3.0)
+|   |   |   |   |   |   TechSupport = Yes: No (3.0)
+|   |   |   |   |   |   TechSupport = No internet service: Yes (0.0)
+|   |   |   |   |   Dependents = Yes: Yes (2.0)
+|   |   TotalCharges > 310.6: No (660.0/129.0)
+|   InternetService = Fiber optic
+|   |   tenure <= 14
+|   |   |   tenure <= 1
+|   |   |   |   TechSupport = No: Yes (207.0/26.0)
+|   |   |   |   TechSupport = Yes
+|   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   MonthlyCharges <= 75.3: No (2.0)
+|   |   |   |   |   |   MonthlyCharges > 75.3: Yes (4.0/1.0)
+|   |   |   |   |   PaymentMethod = Mailed check: No (2.0)
+|   |   |   |   |   PaymentMethod = Bank transfer (automatic): No (0.0)
+|   |   |   |   |   PaymentMethod = Credit card (automatic): No (0.0)
+|   |   |   |   TechSupport = No internet service: Yes (0.0)
+|   |   |   tenure > 1
+|   |   |   |   StreamingTV = No
+|   |   |   |   |   OnlineSecurity = No
+|   |   |   |   |   |   MultipleLines = No phone service: Yes (0.0)
+|   |   |   |   |   |   MultipleLines = No
+|   |   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   |   StreamingMovies = No
+|   |   |   |   |   |   |   |   |   DeviceProtection = No
+|   |   |   |   |   |   |   |   |   |   Partner = Yes: No (22.0/7.0)
+|   |   |   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   |   |   SeniorCitizen <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   OnlineBackup = Yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure <= 9: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure > 9: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OnlineBackup = No
+|   |   |   |   |   |   |   |   |   |   |   |   |   PaperlessBilling = Yes: No (21.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PaperlessBilling = No: Yes (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OnlineBackup = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   |   |   SeniorCitizen > 0
+|   |   |   |   |   |   |   |   |   |   |   |   PaperlessBilling = Yes: Yes (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PaperlessBilling = No: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   DeviceProtection = Yes
+|   |   |   |   |   |   |   |   |   |   Partner = Yes: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   |   |   tenure <= 12
+|   |   |   |   |   |   |   |   |   |   |   |   tenure <= 6: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   tenure > 6: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   tenure > 12: Yes (5.0)
+|   |   |   |   |   |   |   |   |   DeviceProtection = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   StreamingMovies = Yes: Yes (39.0/13.0)
+|   |   |   |   |   |   |   |   StreamingMovies = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   PaymentMethod = Mailed check
+|   |   |   |   |   |   |   |   DeviceProtection = No
+|   |   |   |   |   |   |   |   |   SeniorCitizen <= 0: No (14.0/2.0)
+|   |   |   |   |   |   |   |   |   SeniorCitizen > 0: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   DeviceProtection = Yes: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   DeviceProtection = No internet service: No (0.0)
+|   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic)
+|   |   |   |   |   |   |   |   DeviceProtection = No
+|   |   |   |   |   |   |   |   |   gender = Female
+|   |   |   |   |   |   |   |   |   |   Partner = Yes: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Partner = No: Yes (10.0/1.0)
+|   |   |   |   |   |   |   |   |   gender = Male
+|   |   |   |   |   |   |   |   |   |   Partner = Yes: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Partner = No: No (3.0)
+|   |   |   |   |   |   |   |   DeviceProtection = Yes: Yes (4.0)
+|   |   |   |   |   |   |   |   DeviceProtection = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   PaymentMethod = Credit card (automatic)
+|   |   |   |   |   |   |   |   TechSupport = No
+|   |   |   |   |   |   |   |   |   PaperlessBilling = Yes
+|   |   |   |   |   |   |   |   |   |   gender = Female
+|   |   |   |   |   |   |   |   |   |   |   tenure <= 4: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   tenure > 4: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   gender = Male: No (7.0/2.0)
+|   |   |   |   |   |   |   |   |   PaperlessBilling = No: No (6.0/1.0)
+|   |   |   |   |   |   |   |   TechSupport = Yes: Yes (4.0)
+|   |   |   |   |   |   |   |   TechSupport = No internet service: No (0.0)
+|   |   |   |   |   |   MultipleLines = Yes
+|   |   |   |   |   |   |   tenure <= 5: Yes (77.0/13.0)
+|   |   |   |   |   |   |   tenure > 5
+|   |   |   |   |   |   |   |   TechSupport = No
+|   |   |   |   |   |   |   |   |   StreamingMovies = No
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No
+|   |   |   |   |   |   |   |   |   |   |   |   gender = Female
+|   |   |   |   |   |   |   |   |   |   |   |   |   SeniorCitizen <= 0: No (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SeniorCitizen > 0: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   gender = Male
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure <= 6: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure > 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   tenure <= 10: No (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   tenure > 10: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = Yes: Yes (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Mailed check
+|   |   |   |   |   |   |   |   |   |   |   MonthlyCharges <= 75.6: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   MonthlyCharges > 75.6: No (2.0)
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic): Yes (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Credit card (automatic)
+|   |   |   |   |   |   |   |   |   |   |   TotalCharges <= 868.1: No (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   TotalCharges > 868.1: Yes (2.0)
+|   |   |   |   |   |   |   |   |   StreamingMovies = Yes
+|   |   |   |   |   |   |   |   |   |   MonthlyCharges <= 85.15: Yes (13.0)
+|   |   |   |   |   |   |   |   |   |   MonthlyCharges > 85.15
+|   |   |   |   |   |   |   |   |   |   |   Partner = Yes: Yes (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   |   |   |   tenure <= 10: Yes (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   tenure > 10: No (4.0)
+|   |   |   |   |   |   |   |   |   StreamingMovies = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   TechSupport = Yes: No (4.0/1.0)
+|   |   |   |   |   |   |   |   TechSupport = No internet service: Yes (0.0)
+|   |   |   |   |   OnlineSecurity = Yes
+|   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   Dependents = No
+|   |   |   |   |   |   |   |   TotalCharges <= 191.35: Yes (3.0)
+|   |   |   |   |   |   |   |   TotalCharges > 191.35: No (21.0/4.0)
+|   |   |   |   |   |   |   Dependents = Yes: Yes (3.0)
+|   |   |   |   |   |   PaymentMethod = Mailed check: No (10.0/1.0)
+|   |   |   |   |   |   PaymentMethod = Bank transfer (automatic)
+|   |   |   |   |   |   |   TotalCharges <= 868.1: Yes (6.0)
+|   |   |   |   |   |   |   TotalCharges > 868.1: No (3.0/1.0)
+|   |   |   |   |   |   PaymentMethod = Credit card (automatic)
+|   |   |   |   |   |   |   tenure <= 9: Yes (3.0/1.0)
+|   |   |   |   |   |   |   tenure > 9: No (4.0)
+|   |   |   |   |   OnlineSecurity = No internet service: Yes (0.0)
+|   |   |   |   StreamingTV = Yes
+|   |   |   |   |   Dependents = No: Yes (223.0/50.0)
+|   |   |   |   |   Dependents = Yes
+|   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   MultipleLines = No phone service: No (0.0)
+|   |   |   |   |   |   |   MultipleLines = No: No (15.0/5.0)
+|   |   |   |   |   |   |   MultipleLines = Yes
+|   |   |   |   |   |   |   |   tenure <= 11: Yes (5.0)
+|   |   |   |   |   |   |   |   tenure > 11: No (5.0/1.0)
+|   |   |   |   |   |   PaymentMethod = Mailed check: Yes (6.0/1.0)
+|   |   |   |   |   |   PaymentMethod = Bank transfer (automatic): Yes (4.0)
+|   |   |   |   |   |   PaymentMethod = Credit card (automatic): No (4.0/2.0)
+|   |   |   |   StreamingTV = No internet service: Yes (0.0)
+|   |   tenure > 14
+|   |   |   tenure <= 51
+|   |   |   |   PaperlessBilling = Yes
+|   |   |   |   |   TechSupport = No
+|   |   |   |   |   |   MultipleLines = No phone service: Yes (0.0)
+|   |   |   |   |   |   MultipleLines = No
+|   |   |   |   |   |   |   TotalCharges <= 3478.15
+|   |   |   |   |   |   |   |   Dependents = No
+|   |   |   |   |   |   |   |   |   OnlineBackup = Yes
+|   |   |   |   |   |   |   |   |   |   StreamingMovies = No
+|   |   |   |   |   |   |   |   |   |   |   StreamingTV = No
+|   |   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No: Yes (14.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DeviceProtection = Yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   TotalCharges <= 2401.05: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   TotalCharges > 2401.05: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   |   |   StreamingTV = Yes: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   StreamingTV = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   |   StreamingMovies = Yes
+|   |   |   |   |   |   |   |   |   |   |   gender = Female
+|   |   |   |   |   |   |   |   |   |   |   |   MonthlyCharges <= 94.7: No (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MonthlyCharges > 94.7: Yes (6.0)
+|   |   |   |   |   |   |   |   |   |   |   gender = Male: No (9.0)
+|   |   |   |   |   |   |   |   |   |   StreamingMovies = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   OnlineBackup = No
+|   |   |   |   |   |   |   |   |   |   gender = Female: No (40.0/12.0)
+|   |   |   |   |   |   |   |   |   |   gender = Male
+|   |   |   |   |   |   |   |   |   |   |   StreamingMovies = No: No (15.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   StreamingMovies = Yes: Yes (16.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   StreamingMovies = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   OnlineBackup = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   Dependents = Yes
+|   |   |   |   |   |   |   |   |   SeniorCitizen <= 0
+|   |   |   |   |   |   |   |   |   |   DeviceProtection = No: Yes (16.0/3.0)
+|   |   |   |   |   |   |   |   |   |   DeviceProtection = Yes
+|   |   |   |   |   |   |   |   |   |   |   MonthlyCharges <= 88.5: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   MonthlyCharges > 88.5: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   DeviceProtection = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   SeniorCitizen > 0: No (2.0)
+|   |   |   |   |   |   |   TotalCharges > 3478.15: No (20.0/2.0)
+|   |   |   |   |   |   MultipleLines = Yes
+|   |   |   |   |   |   |   Dependents = No
+|   |   |   |   |   |   |   |   StreamingMovies = No
+|   |   |   |   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   |   |   |   Partner = Yes
+|   |   |   |   |   |   |   |   |   |   |   OnlineSecurity = No
+|   |   |   |   |   |   |   |   |   |   |   |   SeniorCitizen <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure <= 30: No (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure > 30: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SeniorCitizen > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   StreamingTV = No: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   StreamingTV = Yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   tenure <= 47: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   tenure > 47: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   StreamingTV = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   |   |   OnlineSecurity = Yes
+|   |   |   |   |   |   |   |   |   |   |   |   SeniorCitizen <= 0: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SeniorCitizen > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   MonthlyCharges <= 83.5: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MonthlyCharges > 83.5: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   OnlineSecurity = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   |   |   SeniorCitizen <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   OnlineBackup = Yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure <= 27: Yes (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure > 27: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OnlineBackup = No
+|   |   |   |   |   |   |   |   |   |   |   |   |   StreamingTV = No: No (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   StreamingTV = Yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   tenure <= 36: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   tenure > 36: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   StreamingTV = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OnlineBackup = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   |   |   SeniorCitizen > 0
+|   |   |   |   |   |   |   |   |   |   |   |   tenure <= 42: Yes (20.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   tenure > 42: No (3.0)
+|   |   |   |   |   |   |   |   |   PaymentMethod = Mailed check
+|   |   |   |   |   |   |   |   |   |   tenure <= 18: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   tenure > 18: No (4.0)
+|   |   |   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic)
+|   |   |   |   |   |   |   |   |   |   Partner = Yes: Yes (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   |   |   gender = Female
+|   |   |   |   |   |   |   |   |   |   |   |   StreamingTV = No: Yes (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   StreamingTV = Yes: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   StreamingTV = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   |   |   gender = Male: No (7.0/1.0)
+|   |   |   |   |   |   |   |   |   PaymentMethod = Credit card (automatic)
+|   |   |   |   |   |   |   |   |   |   OnlineSecurity = No
+|   |   |   |   |   |   |   |   |   |   |   OnlineBackup = Yes
+|   |   |   |   |   |   |   |   |   |   |   |   SeniorCitizen <= 0: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SeniorCitizen > 0: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OnlineBackup = No
+|   |   |   |   |   |   |   |   |   |   |   |   Partner = Yes: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Partner = No: No (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OnlineBackup = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   |   OnlineSecurity = Yes: No (7.0)
+|   |   |   |   |   |   |   |   |   |   OnlineSecurity = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   StreamingMovies = Yes
+|   |   |   |   |   |   |   |   |   OnlineSecurity = No
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Electronic check: Yes (114.0/37.0)
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Mailed check: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic)
+|   |   |   |   |   |   |   |   |   |   |   tenure <= 36
+|   |   |   |   |   |   |   |   |   |   |   |   tenure <= 20: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   tenure > 20: No (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   tenure > 36: Yes (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   PaymentMethod = Credit card (automatic)
+|   |   |   |   |   |   |   |   |   |   |   OnlineBackup = Yes
+|   |   |   |   |   |   |   |   |   |   |   |   MonthlyCharges <= 100.35: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MonthlyCharges > 100.35: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   OnlineBackup = No
+|   |   |   |   |   |   |   |   |   |   |   |   tenure <= 40: Yes (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   tenure > 40: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   OnlineBackup = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   OnlineSecurity = Yes
+|   |   |   |   |   |   |   |   |   |   tenure <= 29: Yes (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   tenure > 29
+|   |   |   |   |   |   |   |   |   |   |   Partner = Yes: No (6.0)
+|   |   |   |   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   |   |   |   TotalCharges <= 3566.7: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalCharges > 3566.7
+|   |   |   |   |   |   |   |   |   |   |   |   |   gender = Female: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   gender = Male: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   OnlineSecurity = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   StreamingMovies = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   Dependents = Yes
+|   |   |   |   |   |   |   |   Partner = Yes
+|   |   |   |   |   |   |   |   |   OnlineBackup = Yes
+|   |   |   |   |   |   |   |   |   |   SeniorCitizen <= 0: No (19.0/5.0)
+|   |   |   |   |   |   |   |   |   |   SeniorCitizen > 0: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   OnlineBackup = No
+|   |   |   |   |   |   |   |   |   |   StreamingMovies = No
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No
+|   |   |   |   |   |   |   |   |   |   |   |   TotalCharges <= 1994.3: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   TotalCharges > 1994.3: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = Yes: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   |   StreamingMovies = Yes
+|   |   |   |   |   |   |   |   |   |   |   PaymentMethod = Electronic check: Yes (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   PaymentMethod = Mailed check: Yes (0.0)
+|   |   |   |   |   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic): No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   PaymentMethod = Credit card (automatic)
+|   |   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DeviceProtection = Yes: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   |   StreamingMovies = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   OnlineBackup = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   OnlineBackup = Yes: No (5.0)
+|   |   |   |   |   |   |   |   |   OnlineBackup = No
+|   |   |   |   |   |   |   |   |   |   StreamingTV = No: No (3.0)
+|   |   |   |   |   |   |   |   |   |   StreamingTV = Yes: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   StreamingTV = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   OnlineBackup = No internet service: No (0.0)
+|   |   |   |   |   TechSupport = Yes
+|   |   |   |   |   |   OnlineSecurity = No
+|   |   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   |   MonthlyCharges <= 85.5: Yes (7.0)
+|   |   |   |   |   |   |   |   MonthlyCharges > 85.5
+|   |   |   |   |   |   |   |   |   Dependents = No
+|   |   |   |   |   |   |   |   |   |   MultipleLines = No phone service: No (0.0)
+|   |   |   |   |   |   |   |   |   |   MultipleLines = No
+|   |   |   |   |   |   |   |   |   |   |   Partner = Yes: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   |   |   |   OnlineBackup = Yes: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OnlineBackup = No
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure <= 25: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure > 25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   tenure <= 30: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   tenure > 30: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   OnlineBackup = No internet service: No (0.0)
+|   |   |   |   |   |   |   |   |   |   MultipleLines = Yes
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No
+|   |   |   |   |   |   |   |   |   |   |   |   Partner = Yes: No (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure <= 23: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   tenure > 23
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SeniorCitizen <= 0: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SeniorCitizen > 0: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = Yes
+|   |   |   |   |   |   |   |   |   |   |   |   tenure <= 48: Yes (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   tenure > 48: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   DeviceProtection = No internet service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   Dependents = Yes
+|   |   |   |   |   |   |   |   |   |   MultipleLines = No phone service: No (0.0)
+|   |   |   |   |   |   |   |   |   |   MultipleLines = No: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   MultipleLines = Yes: No (4.0)
+|   |   |   |   |   |   |   PaymentMethod = Mailed check: No (4.0/1.0)
+|   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic)
+|   |   |   |   |   |   |   |   StreamingTV = No: No (9.0)
+|   |   |   |   |   |   |   |   StreamingTV = Yes
+|   |   |   |   |   |   |   |   |   MultipleLines = No phone service: Yes (0.0)
+|   |   |   |   |   |   |   |   |   MultipleLines = No: No (2.0)
+|   |   |   |   |   |   |   |   |   MultipleLines = Yes
+|   |   |   |   |   |   |   |   |   |   Partner = Yes: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   |   |   tenure <= 26: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   tenure > 26: No (2.0)
+|   |   |   |   |   |   |   |   StreamingTV = No internet service: No (0.0)
+|   |   |   |   |   |   |   PaymentMethod = Credit card (automatic): No (19.0/5.0)
+|   |   |   |   |   |   OnlineSecurity = Yes: No (32.0/6.0)
+|   |   |   |   |   |   OnlineSecurity = No internet service: No (0.0)
+|   |   |   |   |   TechSupport = No internet service: No (0.0)
+|   |   |   |   PaperlessBilling = No
+|   |   |   |   |   Dependents = No
+|   |   |   |   |   |   SeniorCitizen <= 0: No (91.0/22.0)
+|   |   |   |   |   |   SeniorCitizen > 0
+|   |   |   |   |   |   |   StreamingMovies = No: No (19.0/5.0)
+|   |   |   |   |   |   |   StreamingMovies = Yes
+|   |   |   |   |   |   |   |   MonthlyCharges <= 86.15: Yes (6.0)
+|   |   |   |   |   |   |   |   MonthlyCharges > 86.15: No (20.0/7.0)
+|   |   |   |   |   |   |   StreamingMovies = No internet service: No (0.0)
+|   |   |   |   |   Dependents = Yes
+|   |   |   |   |   |   OnlineSecurity = No
+|   |   |   |   |   |   |   DeviceProtection = No
+|   |   |   |   |   |   |   |   MonthlyCharges <= 84.95: Yes (6.0)
+|   |   |   |   |   |   |   |   MonthlyCharges > 84.95: No (6.0/1.0)
+|   |   |   |   |   |   |   DeviceProtection = Yes: Yes (8.0/2.0)
+|   |   |   |   |   |   |   DeviceProtection = No internet service: Yes (0.0)
+|   |   |   |   |   |   OnlineSecurity = Yes
+|   |   |   |   |   |   |   StreamingTV = No: No (8.0)
+|   |   |   |   |   |   |   StreamingTV = Yes
+|   |   |   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   |   |   tenure <= 22: Yes (2.0)
+|   |   |   |   |   |   |   |   |   tenure > 22: No (2.0)
+|   |   |   |   |   |   |   |   PaymentMethod = Mailed check: Yes (0.0)
+|   |   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic): No (1.0)
+|   |   |   |   |   |   |   |   PaymentMethod = Credit card (automatic): Yes (2.0)
+|   |   |   |   |   |   |   StreamingTV = No internet service: No (0.0)
+|   |   |   |   |   |   OnlineSecurity = No internet service: No (0.0)
+|   |   |   tenure > 51
+|   |   |   |   StreamingTV = No: No (74.0/9.0)
+|   |   |   |   StreamingTV = Yes
+|   |   |   |   |   TechSupport = No
+|   |   |   |   |   |   MonthlyCharges <= 105.95
+|   |   |   |   |   |   |   TotalCharges <= 6962.85
+|   |   |   |   |   |   |   |   Partner = Yes
+|   |   |   |   |   |   |   |   |   PaymentMethod = Electronic check
+|   |   |   |   |   |   |   |   |   |   tenure <= 56: Yes (6.0)
+|   |   |   |   |   |   |   |   |   |   tenure > 56: No (26.0/9.0)
+|   |   |   |   |   |   |   |   |   PaymentMethod = Mailed check: No (1.0)
+|   |   |   |   |   |   |   |   |   PaymentMethod = Bank transfer (automatic)
+|   |   |   |   |   |   |   |   |   |   SeniorCitizen <= 0: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SeniorCitizen > 0: Yes (3.0)
+|   |   |   |   |   |   |   |   |   PaymentMethod = Credit card (automatic)
+|   |   |   |   |   |   |   |   |   |   gender = Female: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   gender = Male: No (5.0/1.0)
+|   |   |   |   |   |   |   |   Partner = No
+|   |   |   |   |   |   |   |   |   OnlineSecurity = No: No (10.0/2.0)
+|   |   |   |   |   |   |   |   |   OnlineSecurity = Yes: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   OnlineSecurity = No internet service: No (0.0)
+|   |   |   |   |   |   |   TotalCharges > 6962.85: Yes (7.0)
+|   |   |   |   |   |   MonthlyCharges > 105.95: No (14.0)
+|   |   |   |   |   TechSupport = Yes: No (35.0/6.0)
+|   |   |   |   |   TechSupport = No internet service: No (0.0)
+|   |   |   |   StreamingTV = No internet service: No (0.0)
+|   InternetService = No
+|   |   tenure <= 1
+|   |   |   PaperlessBilling = Yes
+|   |   |   |   Dependents = No
+|   |   |   |   |   MonthlyCharges <= 20.2
+|   |   |   |   |   |   MonthlyCharges <= 20.05
+|   |   |   |   |   |   |   MonthlyCharges <= 19.65: Yes (10.0/4.0)
+|   |   |   |   |   |   |   MonthlyCharges > 19.65: No (5.0/1.0)
+|   |   |   |   |   |   MonthlyCharges > 20.05: Yes (8.0)
+|   |   |   |   |   MonthlyCharges > 20.2: No (14.0/4.0)
+|   |   |   |   Dependents = Yes: No (12.0/5.0)
+|   |   |   PaperlessBilling = No: No (94.0/31.0)
+|   |   tenure > 1: No (322.0/38.0)
+Contract = One year: No (1319.0/142.0)
+Contract = Two year: No (1537.0/45.0)
+
+Number of Leaves  : 	305
+
+Size of the tree : 	512
+
+
+Time taken to build model: 0.15 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         603               85.6534 %
+Incorrectly Classified Instances       101               14.3466 %
+Kappa statistic                          0.612 
+Mean absolute error                      0.2194
+Root mean squared error                  0.334 
+Relative absolute error                 56.0649 %
+Root relative squared error             75.3571 %
+Total Number of Instances              704     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.936    0.360    0.876      0.936    0.905      0.618    0.875     0.934     No
+                 0.640    0.064    0.786      0.640    0.706      0.618    0.875     0.762     Yes
+Weighted Avg.    0.857    0.280    0.852      0.857    0.852      0.618    0.875     0.888     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 482  33 |   a = No
+  68 121 |   b = Yes
+

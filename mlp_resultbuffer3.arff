@@ -1,0 +1,1016 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.9 -M 0.5 -N 500 -V 0 -S 0 -E 20 -H a -R
+Relation:     WA_Fn-UseC_-Telco-Customer-Churn-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.unsupervised.instance.Randomize-S42
+Instances:    7043
+Attributes:   20
+              gender
+              SeniorCitizen
+              Partner
+              Dependents
+              tenure
+              PhoneService
+              MultipleLines
+              InternetService
+              OnlineSecurity
+              OnlineBackup
+              DeviceProtection
+              TechSupport
+              StreamingTV
+              StreamingMovies
+              Contract
+              PaperlessBilling
+              PaymentMethod
+              MonthlyCharges
+              TotalCharges
+              Churn
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.10096792837107604
+    Node 2    3.3313050016542975
+    Node 3    8.66128141690732
+    Node 4    7.052070222495645
+    Node 5    -17.31737443082592
+    Node 6    0.6619604111225157
+    Node 7    0.7317966954083339
+    Node 8    -4.188988240107286
+    Node 9    1.009555767326723
+    Node 10    3.201509311004361
+    Node 11    2.0698897727997303
+    Node 12    -6.595988635808058
+    Node 13    2.5045752694904206
+    Node 14    3.307138176094649
+    Node 15    2.457653882864191
+    Node 16    8.061540598064258
+    Node 17    6.180112967411282
+    Node 18    2.439323482958363
+    Node 19    6.232428199911322
+    Node 20    2.151487406495051
+    Node 21    11.671242870239343
+    Node 22    5.616925378711484
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.1009679283710806
+    Node 2    -3.3313050016544685
+    Node 3    -8.66128141692367
+    Node 4    -7.052070222497165
+    Node 5    17.317374430828583
+    Node 6    -0.661960411122528
+    Node 7    -0.7317966954083016
+    Node 8    4.188988240107638
+    Node 9    -1.0095557673267384
+    Node 10    -3.201509311004487
+    Node 11    -2.069889772799855
+    Node 12    6.59598863580926
+    Node 13    -2.504575269490538
+    Node 14    -3.30713817609531
+    Node 15    -2.4576538828641783
+    Node 16    -8.061540598064866
+    Node 17    -6.180112967412481
+    Node 18    -2.4393234829587316
+    Node 19    -6.232428199912754
+    Node 20    -2.1514874064950313
+    Node 21    -11.67124287031217
+    Node 22    -5.616925378713335
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -11.128171986316666
+    Attrib gender=Male    2.820180082381747
+    Attrib SeniorCitizen    -11.29335249809608
+    Attrib Partner=No    -7.894832333507767
+    Attrib Dependents=Yes    4.200968966237455
+    Attrib tenure    29.78480393779611
+    Attrib PhoneService=Yes    7.7753117378225705
+    Attrib MultipleLines=No phone service    -7.77991464925271
+    Attrib MultipleLines=No    32.60047268242581
+    Attrib MultipleLines=Yes    -13.603959155886022
+    Attrib InternetService=DSL    20.349328873819434
+    Attrib InternetService=Fiber optic    -23.010286041141658
+    Attrib InternetService=No    13.918765229784352
+    Attrib OnlineSecurity=No    6.098302532429235
+    Attrib OnlineSecurity=Yes    -8.814017623516941
+    Attrib OnlineSecurity=No internet service    13.856202142393538
+    Attrib OnlineBackup=Yes    -2.699618132992676
+    Attrib OnlineBackup=No    -0.0039317387806725446
+    Attrib OnlineBackup=No internet service    13.885211853724364
+    Attrib DeviceProtection=No    -9.360690049466834
+    Attrib DeviceProtection=Yes    6.710049535762568
+    Attrib DeviceProtection=No internet service    13.915434234835917
+    Attrib TechSupport=No    -9.680037863170524
+    Attrib TechSupport=Yes    6.993725659462258
+    Attrib TechSupport=No internet service    13.878441230701135
+    Attrib StreamingTV=No    -22.529665585622435
+    Attrib StreamingTV=Yes    19.84390171759132
+    Attrib StreamingTV=No internet service    13.880121617006495
+    Attrib StreamingMovies=No    -2.7214232211213485
+    Attrib StreamingMovies=Yes    0.027484734235244484
+    Attrib StreamingMovies=No internet service    13.853201148113683
+    Attrib Contract=Month-to-month    18.514406872225607
+    Attrib Contract=One year    -16.442191769867957
+    Attrib Contract=Two year    9.14843548960277
+    Attrib PaperlessBilling=No    -2.9506796569420697
+    Attrib PaymentMethod=Electronic check    19.2636165543546
+    Attrib PaymentMethod=Mailed check    -9.453052710190455
+    Attrib PaymentMethod=Bank transfer (automatic)    8.97737381140112
+    Attrib PaymentMethod=Credit card (automatic)    3.4890271425932635
+    Attrib MonthlyCharges    3.621873835986959
+    Attrib TotalCharges    21.55864279419535
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -9.135359194679125
+    Attrib gender=Male    -11.216035054005953
+    Attrib SeniorCitizen    7.166890851867631
+    Attrib Partner=No    -5.1398252359855965
+    Attrib Dependents=Yes    -2.670635447278528
+    Attrib tenure    5.254418770488377
+    Attrib PhoneService=Yes    11.555754963986768
+    Attrib MultipleLines=No phone service    -11.56360865566614
+    Attrib MultipleLines=No    5.598005905656851
+    Attrib MultipleLines=Yes    15.083005085667347
+    Attrib InternetService=DSL    14.791263644438827
+    Attrib InternetService=Fiber optic    -10.929007498140143
+    Attrib InternetService=No    5.252217913483844
+    Attrib OnlineSecurity=No    0.7814572906199131
+    Attrib OnlineSecurity=Yes    3.0728685040949792
+    Attrib OnlineSecurity=No internet service    5.278438542126799
+    Attrib OnlineBackup=Yes    10.139414569041953
+    Attrib OnlineBackup=No    -6.389543002201562
+    Attrib OnlineBackup=No internet service    5.324048538364196
+    Attrib DeviceProtection=No    -3.5384130679338064
+    Attrib DeviceProtection=Yes    7.420043764728339
+    Attrib DeviceProtection=No internet service    5.29835537662854
+    Attrib TechSupport=No    6.296912570300085
+    Attrib TechSupport=Yes    -2.4619987507853676
+    Attrib TechSupport=No internet service    5.273764376814625
+    Attrib StreamingTV=No    3.5349347406561358
+    Attrib StreamingTV=Yes    0.31730786236953473
+    Attrib StreamingTV=No internet service    5.286833948143454
+    Attrib StreamingMovies=No    1.644019744075188
+    Attrib StreamingMovies=Yes    2.2297206142873613
+    Attrib StreamingMovies=No internet service    5.336214590319293
+    Attrib Contract=Month-to-month    -14.700595240157464
+    Attrib Contract=One year    7.02945283614041
+    Attrib Contract=Two year    16.806613909155658
+    Attrib PaperlessBilling=No    6.359185859877013
+    Attrib PaymentMethod=Electronic check    -6.330331123060767
+    Attrib PaymentMethod=Mailed check    3.8576935418315434
+    Attrib PaymentMethod=Bank transfer (automatic)    18.07354364113911
+    Attrib PaymentMethod=Credit card (automatic)    2.6611541035867723
+    Attrib MonthlyCharges    2.070821997672171
+    Attrib TotalCharges    4.898973521098077
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -2.6015480523642127
+    Attrib gender=Male    4.526382652104816
+    Attrib SeniorCitizen    -1.472798325059952
+    Attrib Partner=No    -9.861638945395338
+    Attrib Dependents=Yes    35.79882979361832
+    Attrib tenure    19.099911208648777
+    Attrib PhoneService=Yes    -3.4192352553714254
+    Attrib MultipleLines=No phone service    3.3953481467570197
+    Attrib MultipleLines=No    4.033649456278875
+    Attrib MultipleLines=Yes    -4.846060906196452
+    Attrib InternetService=DSL    -1.5546014659178593
+    Attrib InternetService=Fiber optic    0.4392045890613365
+    Attrib InternetService=No    3.751323753976392
+    Attrib OnlineSecurity=No    3.0035410201577193
+    Attrib OnlineSecurity=Yes    -4.148293626110288
+    Attrib OnlineSecurity=No internet service    3.7132541494230655
+    Attrib OnlineBackup=Yes    8.048703186716827
+    Attrib OnlineBackup=No    -9.264242940849561
+    Attrib OnlineBackup=No internet service    3.730010193094284
+    Attrib DeviceProtection=No    -9.913683004014858
+    Attrib DeviceProtection=Yes    8.755746511274326
+    Attrib DeviceProtection=No internet service    3.763908035594356
+    Attrib TechSupport=No    -0.8367089476202828
+    Attrib TechSupport=Yes    -0.36727763772598776
+    Attrib TechSupport=No internet service    3.6946072087378217
+    Attrib StreamingTV=No    6.845305321918266
+    Attrib StreamingTV=Yes    -7.939769303593218
+    Attrib StreamingTV=No internet service    3.766318105540528
+    Attrib StreamingMovies=No    0.5646299428035296
+    Attrib StreamingMovies=Yes    -1.6976827955685119
+    Attrib StreamingMovies=No internet service    3.6939922456814664
+    Attrib Contract=Month-to-month    -32.01234329028097
+    Attrib Contract=One year    4.267678121007307
+    Attrib Contract=Two year    30.28290529581615
+    Attrib PaperlessBilling=No    6.63056611566107
+    Attrib PaymentMethod=Electronic check    -2.5140146095674605
+    Attrib PaymentMethod=Mailed check    -4.847632664242001
+    Attrib PaymentMethod=Bank transfer (automatic)    -3.976385785105476
+    Attrib PaymentMethod=Credit card (automatic)    16.4397450388913
+    Attrib MonthlyCharges    0.364614012216495
+    Attrib TotalCharges    13.056121926787872
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -6.477641747717961
+    Attrib gender=Male    -4.914152452552107
+    Attrib SeniorCitizen    1.9750581657452353
+    Attrib Partner=No    5.395636762787651
+    Attrib Dependents=Yes    -6.762524153084746
+    Attrib tenure    0.5448346393179114
+    Attrib PhoneService=Yes    -3.829545512681919
+    Attrib MultipleLines=No phone service    3.84177670796289
+    Attrib MultipleLines=No    5.718130682522025
+    Attrib MultipleLines=Yes    -3.1832043454826646
+    Attrib InternetService=DSL    0.10708327743674222
+    Attrib InternetService=Fiber optic    -2.5013809602186234
+    Attrib InternetService=No    8.860329884593215
+    Attrib OnlineSecurity=No    -1.595406500726328
+    Attrib OnlineSecurity=Yes    -0.8093731797609296
+    Attrib OnlineSecurity=No internet service    8.800165001814596
+    Attrib OnlineBackup=Yes    -1.4961578838300182
+    Attrib OnlineBackup=No    -0.8387633134833543
+    Attrib OnlineBackup=No internet service    8.832596588372489
+    Attrib DeviceProtection=No    -2.6246716123827376
+    Attrib DeviceProtection=Yes    0.2151162647020364
+    Attrib DeviceProtection=No internet service    8.83049321170491
+    Attrib TechSupport=No    0.08509933121951928
+    Attrib TechSupport=Yes    -2.425445833967527
+    Attrib TechSupport=No internet service    8.815546175691775
+    Attrib StreamingTV=No    0.9594714402091004
+    Attrib StreamingTV=Yes    -3.368886373785746
+    Attrib StreamingTV=No internet service    8.853377036039099
+    Attrib StreamingMovies=No    3.2347208067866564
+    Attrib StreamingMovies=Yes    -5.578777963084343
+    Attrib StreamingMovies=No internet service    8.813688105846518
+    Attrib Contract=Month-to-month    -1.4903516161639487
+    Attrib Contract=One year    -0.041307311690645394
+    Attrib Contract=Two year    7.9956192449437955
+    Attrib PaperlessBilling=No    -2.9022227404394982
+    Attrib PaymentMethod=Electronic check    5.486226360892918
+    Attrib PaymentMethod=Mailed check    5.0179888134464745
+    Attrib PaymentMethod=Bank transfer (automatic)    -0.07361178598479982
+    Attrib PaymentMethod=Credit card (automatic)    2.3983687898951533
+    Attrib MonthlyCharges    -3.172449775975684
+    Attrib TotalCharges    2.6489514860711396
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -8.379268681008675
+    Attrib gender=Male    -20.374089276080724
+    Attrib SeniorCitizen    -35.88036427528816
+    Attrib Partner=No    -10.673597143475817
+    Attrib Dependents=Yes    9.06910766931118
+    Attrib tenure    55.70965393427604
+    Attrib PhoneService=Yes    0.36184279828355337
+    Attrib MultipleLines=No phone service    -0.3568271103717823
+    Attrib MultipleLines=No    4.824958795802178
+    Attrib MultipleLines=Yes    3.9500511430697496
+    Attrib InternetService=DSL    24.907322643525887
+    Attrib InternetService=Fiber optic    -18.222604658875593
+    Attrib InternetService=No    1.6806873751365614
+    Attrib OnlineSecurity=No    -10.099112629720201
+    Attrib OnlineSecurity=Yes    16.750053765341814
+    Attrib OnlineSecurity=No internet service    1.7270175016394516
+    Attrib OnlineBackup=Yes    -1.5560482084925318
+    Attrib OnlineBackup=No    8.197870489075894
+    Attrib OnlineBackup=No internet service    1.6567257100256623
+    Attrib DeviceProtection=No    7.1245852770635105
+    Attrib DeviceProtection=Yes    -0.4611856336538086
+    Attrib DeviceProtection=No internet service    1.7228154978109995
+    Attrib TechSupport=No    5.226392940305903
+    Attrib TechSupport=Yes    1.439355226830126
+    Attrib TechSupport=No internet service    1.7279073711220752
+    Attrib StreamingTV=No    16.7124857173189
+    Attrib StreamingTV=Yes    -10.019303379666594
+    Attrib StreamingTV=No internet service    1.6786317307921752
+    Attrib StreamingMovies=No    4.2297733272987905
+    Attrib StreamingMovies=Yes    2.4664907437716055
+    Attrib StreamingMovies=No internet service    1.7270148880882539
+    Attrib Contract=Month-to-month    9.159295306139766
+    Attrib Contract=One year    -8.588789520358384
+    Attrib Contract=Two year    7.852076875875305
+    Attrib PaperlessBilling=No    17.887666090744275
+    Attrib PaymentMethod=Electronic check    0.5157312200845136
+    Attrib PaymentMethod=Mailed check    2.408888463239821
+    Attrib PaymentMethod=Bank transfer (automatic)    -0.254559580415724
+    Attrib PaymentMethod=Credit card (automatic)    14.039715887266958
+    Attrib MonthlyCharges    -2.7101318808974173
+    Attrib TotalCharges    18.175830041092837
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -3.444256185247312
+    Attrib gender=Male    0.983096995901595
+    Attrib SeniorCitizen    -24.410499878000195
+    Attrib Partner=No    22.36075509204147
+    Attrib Dependents=Yes    5.315885491326959
+    Attrib tenure    56.95015068362604
+    Attrib PhoneService=Yes    11.809641414206343
+    Attrib MultipleLines=No phone service    -11.774103188672324
+    Attrib MultipleLines=No    35.028798515164546
+    Attrib MultipleLines=Yes    -19.83476460941418
+    Attrib InternetService=DSL    3.657068995570056
+    Attrib InternetService=Fiber optic    -2.3384276827755675
+    Attrib InternetService=No    2.1370110569728977
+    Attrib OnlineSecurity=No    -18.610392831194954
+    Attrib OnlineSecurity=Yes    19.795895225440454
+    Attrib OnlineSecurity=No internet service    2.1323205853276406
+    Attrib OnlineBackup=Yes    12.682284841094134
+    Attrib OnlineBackup=No    -11.414193226972262
+    Attrib OnlineBackup=No internet service    2.183394000558353
+    Attrib DeviceProtection=No    8.373747812153692
+    Attrib DeviceProtection=Yes    -7.090809448273629
+    Attrib DeviceProtection=No internet service    2.1574242749564276
+    Attrib TechSupport=No    -15.056590606659
+    Attrib TechSupport=Yes    16.215303752092353
+    Attrib TechSupport=No internet service    2.1932597057230003
+    Attrib StreamingTV=No    12.868137063669563
+    Attrib StreamingTV=Yes    -11.653322084522895
+    Attrib StreamingTV=No internet service    2.176181863201365
+    Attrib StreamingMovies=No    0.3619340666439837
+    Attrib StreamingMovies=Yes    0.7915091445920391
+    Attrib StreamingMovies=No internet service    2.2026393747528785
+    Attrib Contract=Month-to-month    14.87110011681695
+    Attrib Contract=One year    -9.917584361475278
+    Attrib Contract=Two year    -1.5453971290061579
+    Attrib PaperlessBilling=No    5.559916171522878
+    Attrib PaymentMethod=Electronic check    -0.7487538485238965
+    Attrib PaymentMethod=Mailed check    4.837690113380642
+    Attrib PaymentMethod=Bank transfer (automatic)    -3.7380901826918254
+    Attrib PaymentMethod=Credit card (automatic)    6.540749475398334
+    Attrib MonthlyCharges    1.157469122523041
+    Attrib TotalCharges    30.97156576590762
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.1685547519692033
+    Attrib gender=Male    -0.3951018218970212
+    Attrib SeniorCitizen    -3.719416538319666
+    Attrib Partner=No    6.3674043427665525
+    Attrib Dependents=Yes    33.75110419019923
+    Attrib tenure    39.7660211465946
+    Attrib PhoneService=Yes    -0.555215078408071
+    Attrib MultipleLines=No phone service    0.5873609629912543
+    Attrib MultipleLines=No    -1.242554457210157
+    Attrib MultipleLines=Yes    0.8643709818798537
+    Attrib InternetService=DSL    -2.2215983404503628
+    Attrib InternetService=Fiber optic    3.572970710060301
+    Attrib InternetService=No    -1.1330711224456054
+    Attrib OnlineSecurity=No    -5.125537872546156
+    Attrib OnlineSecurity=Yes    6.37553202005682
+    Attrib OnlineSecurity=No internet service    -1.125540700484817
+    Attrib OnlineBackup=Yes    4.135566746574003
+    Attrib OnlineBackup=No    -2.8379930049630193
+    Attrib OnlineBackup=No internet service    -1.1744090306477462
+    Attrib DeviceProtection=No    -11.449927255978583
+    Attrib DeviceProtection=Yes    12.735916879958724
+    Attrib DeviceProtection=No internet service    -1.1054381178370005
+    Attrib TechSupport=No    -3.1535511214932526
+    Attrib TechSupport=Yes    4.481317304076066
+    Attrib TechSupport=No internet service    -1.1730372145846777
+    Attrib StreamingTV=No    -3.0092114501022076
+    Attrib StreamingTV=Yes    4.252117090688338
+    Attrib StreamingTV=No internet service    -1.12469803005052
+    Attrib StreamingMovies=No    4.241463411900373
+    Attrib StreamingMovies=Yes    -2.891869919271304
+    Attrib StreamingMovies=No internet service    -1.164599331040553
+    Attrib Contract=Month-to-month    -28.414610446534137
+    Attrib Contract=One year    5.16506864361428
+    Attrib Contract=Two year    23.42964770882014
+    Attrib PaperlessBilling=No    29.4220073444679
+    Attrib PaymentMethod=Electronic check    -10.756392963413807
+    Attrib PaymentMethod=Mailed check    16.48459973671457
+    Attrib PaymentMethod=Bank transfer (automatic)    -2.334985240389313
+    Attrib PaymentMethod=Credit card (automatic)    -3.12272380994557
+    Attrib MonthlyCharges    6.324510957720327
+    Attrib TotalCharges    39.51824951614932
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -4.339650597034386
+    Attrib gender=Male    37.60153494436941
+    Attrib SeniorCitizen    5.658537558982201
+    Attrib Partner=No    -14.297767606488009
+    Attrib Dependents=Yes    -18.250699876162717
+    Attrib tenure    47.253278113244676
+    Attrib PhoneService=Yes    -0.9070588599680086
+    Attrib MultipleLines=No phone service    0.9464740703384382
+    Attrib MultipleLines=No    3.1832609155944245
+    Attrib MultipleLines=Yes    0.2822008483247252
+    Attrib InternetService=DSL    -10.627606212427622
+    Attrib InternetService=Fiber optic    4.517255573925485
+    Attrib InternetService=No    10.510369184056756
+    Attrib OnlineSecurity=No    5.598777923294626
+    Attrib OnlineSecurity=Yes    -11.704935545236005
+    Attrib OnlineSecurity=No internet service    10.49918887380463
+    Attrib OnlineBackup=Yes    -10.100668534147601
+    Attrib OnlineBackup=No    3.917660575111195
+    Attrib OnlineBackup=No internet service    10.526144446947807
+    Attrib DeviceProtection=No    -6.190103575642732
+    Attrib DeviceProtection=Yes    0.00803055982710532
+    Attrib DeviceProtection=No internet service    10.486323514305482
+    Attrib TechSupport=No    -4.29877103385521
+    Attrib TechSupport=Yes    -1.835541115581279
+    Attrib TechSupport=No internet service    10.519254281778753
+    Attrib StreamingTV=No    14.79229023185692
+    Attrib StreamingTV=Yes    -20.989511463379685
+    Attrib StreamingTV=No internet service    10.501398577927304
+    Attrib StreamingMovies=No    16.220501608883694
+    Attrib StreamingMovies=Yes    -22.41264789974119
+    Attrib StreamingMovies=No internet service    10.520410519659762
+    Attrib Contract=Month-to-month    -2.9746504225513273
+    Attrib Contract=One year    2.449377769837881
+    Attrib Contract=Two year    4.826290205375631
+    Attrib PaperlessBilling=No    15.268476368629939
+    Attrib PaymentMethod=Electronic check    -12.287246551089027
+    Attrib PaymentMethod=Mailed check    20.456321156653
+    Attrib PaymentMethod=Bank transfer (automatic)    -30.780623503270956
+    Attrib PaymentMethod=Credit card (automatic)    31.322236816471843
+    Attrib MonthlyCharges    -4.545316015194694
+    Attrib TotalCharges    10.968305307540549
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -4.836043436567034
+    Attrib gender=Male    15.087651254908629
+    Attrib SeniorCitizen    -15.703815362893035
+    Attrib Partner=No    1.4397280052465746
+    Attrib Dependents=Yes    -2.2916744828167444
+    Attrib tenure    35.446914201861304
+    Attrib PhoneService=Yes    2.318570724718016
+    Attrib MultipleLines=No phone service    -2.3245710413044285
+    Attrib MultipleLines=No    1.684806845969132
+    Attrib MultipleLines=Yes    5.508770856256452
+    Attrib InternetService=DSL    9.369810862061026
+    Attrib InternetService=Fiber optic    -12.86864236983856
+    Attrib InternetService=No    8.36412874239066
+    Attrib OnlineSecurity=No    -2.7806058871057164
+    Attrib OnlineSecurity=Yes    -0.6785576186384005
+    Attrib OnlineSecurity=No internet service    8.453788801408367
+    Attrib OnlineBackup=Yes    9.447367404144106
+    Attrib OnlineBackup=No    -13.01752307618833
+    Attrib OnlineBackup=No internet service    8.455291543812093
+    Attrib DeviceProtection=No    -4.4288681871777085
+    Attrib DeviceProtection=Yes    0.8999573631347974
+    Attrib DeviceProtection=No internet service    8.359857077545064
+    Attrib TechSupport=No    -5.60864139615162
+    Attrib TechSupport=Yes    2.0205124866377537
+    Attrib TechSupport=No internet service    8.382537956615733
+    Attrib StreamingTV=No    23.41652587943555
+    Attrib StreamingTV=Yes    -26.998820533508354
+    Attrib StreamingTV=No internet service    8.39448307824634
+    Attrib StreamingMovies=No    -16.174676492101174
+    Attrib StreamingMovies=Yes    12.69365059799596
+    Attrib StreamingMovies=No internet service    8.387792339404095
+    Attrib Contract=Month-to-month    1.1681974726082598
+    Attrib Contract=One year    -19.793669238701742
+    Attrib Contract=Two year    23.522942687442058
+    Attrib PaperlessBilling=No    3.8461974689176763
+    Attrib PaymentMethod=Electronic check    6.545135236342416
+    Attrib PaymentMethod=Mailed check    13.183860514367794
+    Attrib PaymentMethod=Bank transfer (automatic)    -2.2845080915248257
+    Attrib PaymentMethod=Credit card (automatic)    -7.611290563883001
+    Attrib MonthlyCharges    -4.256630111895832
+    Attrib TotalCharges    14.445066296265404
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -1.0490434590592734
+    Attrib gender=Male    -6.84093805977051
+    Attrib SeniorCitizen    -5.331647862323705
+    Attrib Partner=No    -18.45259592330113
+    Attrib Dependents=Yes    -0.05553601712240377
+    Attrib tenure    46.380223509397105
+    Attrib PhoneService=Yes    17.08564915364201
+    Attrib MultipleLines=No phone service    -17.03661393775183
+    Attrib MultipleLines=No    5.207517663411902
+    Attrib MultipleLines=Yes    12.880125338069076
+    Attrib InternetService=DSL    15.66312335139111
+    Attrib InternetService=Fiber optic    -16.870519218324755
+    Attrib InternetService=No    2.2842162894061895
+    Attrib OnlineSecurity=No    -2.1270791305868193
+    Attrib OnlineSecurity=Yes    0.8994137390457402
+    Attrib OnlineSecurity=No internet service    2.256450174182846
+    Attrib OnlineBackup=Yes    16.747199857895737
+    Attrib OnlineBackup=No    -18.031589817639322
+    Attrib OnlineBackup=No internet service    2.2495728267293993
+    Attrib DeviceProtection=No    19.8810390946866
+    Attrib DeviceProtection=Yes    -21.012097061093712
+    Attrib DeviceProtection=No internet service    2.279790365088453
+    Attrib TechSupport=No    -4.689811668214458
+    Attrib TechSupport=Yes    3.434675675220616
+    Attrib TechSupport=No internet service    2.2308832246216745
+    Attrib StreamingTV=No    -9.107438312579141
+    Attrib StreamingTV=Yes    7.904273709878223
+    Attrib StreamingTV=No internet service    2.233567864727612
+    Attrib StreamingMovies=No    1.5694209954365357
+    Attrib StreamingMovies=Yes    -2.7335871355375536
+    Attrib StreamingMovies=No internet service    2.2196579598412436
+    Attrib Contract=Month-to-month    -20.258142445804207
+    Attrib Contract=One year    9.013064777701654
+    Attrib Contract=Two year    12.22408631779882
+    Attrib PaperlessBilling=No    10.534239326964183
+    Attrib PaymentMethod=Electronic check    -5.705529789335656
+    Attrib PaymentMethod=Mailed check    -2.9038986371760203
+    Attrib PaymentMethod=Bank transfer (automatic)    -6.324604063683995
+    Attrib PaymentMethod=Credit card (automatic)    16.97502508256988
+    Attrib MonthlyCharges    0.08219423747245899
+    Attrib TotalCharges    29.23599543486719
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -10.486431157711417
+    Attrib gender=Male    -11.677443917650915
+    Attrib SeniorCitizen    2.0245989911959064
+    Attrib Partner=No    -7.269733626937011
+    Attrib Dependents=Yes    25.790148766643405
+    Attrib tenure    -1.593222168265922
+    Attrib PhoneService=Yes    -10.54010373376846
+    Attrib MultipleLines=No phone service    10.58860924473545
+    Attrib MultipleLines=No    20.770226927981177
+    Attrib MultipleLines=Yes    -20.946237476116533
+    Attrib InternetService=DSL    10.449620706706135
+    Attrib InternetService=Fiber optic    -3.437382676343047
+    Attrib InternetService=No    3.511729462314753
+    Attrib OnlineSecurity=No    -17.778267431452964
+    Attrib OnlineSecurity=Yes    24.717972991637456
+    Attrib OnlineSecurity=No internet service    3.4862508712109173
+    Attrib OnlineBackup=Yes    12.652074154120259
+    Attrib OnlineBackup=No    -5.633523827146146
+    Attrib OnlineBackup=No internet service    3.4327190478355
+    Attrib DeviceProtection=No    -8.419869553625231
+    Attrib DeviceProtection=Yes    15.456595734982521
+    Attrib DeviceProtection=No internet service    3.473051005572944
+    Attrib TechSupport=No    -28.602018869645928
+    Attrib TechSupport=Yes    35.569928294472504
+    Attrib TechSupport=No internet service    3.450275204097004
+    Attrib StreamingTV=No    14.266266824007028
+    Attrib StreamingTV=Yes    -7.243571876801579
+    Attrib StreamingTV=No internet service    3.50347304185406
+    Attrib StreamingMovies=No    -0.5694032348682314
+    Attrib StreamingMovies=Yes    7.532448535146675
+    Attrib StreamingMovies=No internet service    3.5065292757395157
+    Attrib Contract=Month-to-month    -11.321162418110653
+    Attrib Contract=One year    20.83230462396006
+    Attrib Contract=Two year    1.0847264144818636
+    Attrib PaperlessBilling=No    13.335762432367776
+    Attrib PaymentMethod=Electronic check    5.721492626878202
+    Attrib PaymentMethod=Mailed check    -8.678573528750794
+    Attrib PaymentMethod=Bank transfer (automatic)    -2.7358212863274916
+    Attrib PaymentMethod=Credit card (automatic)    26.54761504758455
+    Attrib MonthlyCharges    1.9489418728972356
+    Attrib TotalCharges    -1.6855386860762769
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -4.491521135506417
+    Attrib gender=Male    -49.316386237989065
+    Attrib SeniorCitizen    5.613025554607469
+    Attrib Partner=No    8.251633475616504
+    Attrib Dependents=Yes    -5.32216069785861
+    Attrib tenure    29.42553093220062
+    Attrib PhoneService=Yes    0.14976013813309044
+    Attrib MultipleLines=No phone service    -0.1536663366169657
+    Attrib MultipleLines=No    -9.613683735836233
+    Attrib MultipleLines=Yes    14.166893125396564
+    Attrib InternetService=DSL    16.708819922663185
+    Attrib InternetService=Fiber optic    -15.985798822816697
+    Attrib InternetService=No    3.814845083644932
+    Attrib OnlineSecurity=No    3.829114874163988
+    Attrib OnlineSecurity=Yes    -3.1826335398335086
+    Attrib OnlineSecurity=No internet service    3.777349310595363
+    Attrib OnlineBackup=Yes    0.3818244028430996
+    Attrib OnlineBackup=No    0.2838312429276905
+    Attrib OnlineBackup=No internet service    3.8064909879295143
+    Attrib DeviceProtection=No    -11.278137481758158
+    Attrib DeviceProtection=Yes    11.90272698351731
+    Attrib DeviceProtection=No internet service    3.8219501895987484
+    Attrib TechSupport=No    -4.88661862527268
+    Attrib TechSupport=Yes    5.632890740829832
+    Attrib TechSupport=No internet service    3.776438680591628
+    Attrib StreamingTV=No    -3.2524939662047445
+    Attrib StreamingTV=Yes    3.887279011017058
+    Attrib StreamingTV=No internet service    3.768633617278896
+    Attrib StreamingMovies=No    -1.0616577141807728
+    Attrib StreamingMovies=Yes    1.6564725838510832
+    Attrib StreamingMovies=No internet service    3.81710211287717
+    Attrib Contract=Month-to-month    -10.288682172024375
+    Attrib Contract=One year    11.299014412358995
+    Attrib Contract=Two year    3.524826518931937
+    Attrib PaperlessBilling=No    10.973209649034178
+    Attrib PaymentMethod=Electronic check    -4.909514713345258
+    Attrib PaymentMethod=Mailed check    15.496856259110965
+    Attrib PaymentMethod=Bank transfer (automatic)    13.343468482571886
+    Attrib PaymentMethod=Credit card (automatic)    -14.988272208585615
+    Attrib MonthlyCharges    -1.0899905588921295
+    Attrib TotalCharges    15.616611877728756
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    1.5570195264145537
+    Attrib gender=Male    -0.3211208427050139
+    Attrib SeniorCitizen    -9.434918001401268
+    Attrib Partner=No    -10.486698003451105
+    Attrib Dependents=Yes    13.70489754323878
+    Attrib tenure    30.00385692792851
+    Attrib PhoneService=Yes    2.2299809144201306
+    Attrib MultipleLines=No phone service    -2.2458827726828425
+    Attrib MultipleLines=No    -4.205453299643129
+    Attrib MultipleLines=Yes    4.820740760933444
+    Attrib InternetService=DSL    1.2805872859765652
+    Attrib InternetService=Fiber optic    -9.490566445623683
+    Attrib InternetService=No    6.5844848436043675
+    Attrib OnlineSecurity=No    -10.473972467146954
+    Attrib OnlineSecurity=Yes    2.366812995771433
+    Attrib OnlineSecurity=No internet service    6.545685615522587
+    Attrib OnlineBackup=Yes    -4.786419702751665
+    Attrib OnlineBackup=No    -3.300381508288905
+    Attrib OnlineBackup=No internet service    6.59458689536278
+    Attrib DeviceProtection=No    -5.360407002572478
+    Attrib DeviceProtection=Yes    -2.8762754126462142
+    Attrib DeviceProtection=No internet service    6.530442021204675
+    Attrib TechSupport=No    -13.475690376624067
+    Attrib TechSupport=Yes    5.29907508783554
+    Attrib TechSupport=No internet service    6.539013288275789
+    Attrib StreamingTV=No    9.280479649854914
+    Attrib StreamingTV=Yes    -17.34295853817858
+    Attrib StreamingTV=No internet service    6.551077531406315
+    Attrib StreamingMovies=No    -1.8189903472129572
+    Attrib StreamingMovies=Yes    -6.2702825413337555
+    Attrib StreamingMovies=No internet service    6.598291621841651
+    Attrib Contract=Month-to-month    -3.807517177716149
+    Attrib Contract=One year    0.21416864278350878
+    Attrib Contract=Two year    1.9812269129585824
+    Attrib PaperlessBilling=No    -4.463727537317198
+    Attrib PaymentMethod=Electronic check    -22.641421193702033
+    Attrib PaymentMethod=Mailed check    -1.4762273614419545
+    Attrib PaymentMethod=Bank transfer (automatic)    8.736679174064996
+    Attrib PaymentMethod=Credit card (automatic)    12.288222289482126
+    Attrib MonthlyCharges    -6.159645157025194
+    Attrib TotalCharges    14.655298540851163
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -7.027880779381419
+    Attrib gender=Male    10.470197025460298
+    Attrib SeniorCitizen    14.61050217213117
+    Attrib Partner=No    3.0309030362901215
+    Attrib Dependents=Yes    -23.30295112510633
+    Attrib tenure    14.93463361180687
+    Attrib PhoneService=Yes    -6.35251345351514
+    Attrib MultipleLines=No phone service    6.34406592708941
+    Attrib MultipleLines=No    11.035367195388709
+    Attrib MultipleLines=Yes    -10.311723431877546
+    Attrib InternetService=DSL    -4.992630829333331
+    Attrib InternetService=Fiber optic    9.283649650426812
+    Attrib InternetService=No    2.7160251506568374
+    Attrib OnlineSecurity=No    -5.315265826356227
+    Attrib OnlineSecurity=Yes    9.662065698094349
+    Attrib OnlineSecurity=No internet service    2.733273501953687
+    Attrib OnlineBackup=Yes    -1.4220846909996732
+    Attrib OnlineBackup=No    5.735896850509338
+    Attrib OnlineBackup=No internet service    2.675461071835385
+    Attrib DeviceProtection=No    -3.768992337039581
+    Attrib DeviceProtection=Yes    8.11619158374392
+    Attrib DeviceProtection=No internet service    2.7051118617578576
+    Attrib TechSupport=No    13.922776753565836
+    Attrib TechSupport=Yes    -9.570353923361715
+    Attrib TechSupport=No internet service    2.7556325215753983
+    Attrib StreamingTV=No    8.466795465914535
+    Attrib StreamingTV=Yes    -4.124187567781928
+    Attrib StreamingTV=No internet service    2.6793070459225508
+    Attrib StreamingMovies=No    10.21570675203192
+    Attrib StreamingMovies=Yes    -5.864193604915244
+    Attrib StreamingMovies=No internet service    2.6971097457945277
+    Attrib Contract=Month-to-month    -26.01721629590881
+    Attrib Contract=One year    24.644488902021735
+    Attrib Contract=Two year    8.398209370140851
+    Attrib PaperlessBilling=No    -10.821780716823554
+    Attrib PaymentMethod=Electronic check    -0.8096923211932893
+    Attrib PaymentMethod=Mailed check    -11.819531190594533
+    Attrib PaymentMethod=Bank transfer (automatic)    35.72586263816742
+    Attrib PaymentMethod=Credit card (automatic)    -8.946122427540807
+    Attrib MonthlyCharges    1.0735668615528764
+    Attrib TotalCharges    8.185933102819085
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -6.113798957919301
+    Attrib gender=Male    -3.4301311229875666
+    Attrib SeniorCitizen    -2.084144274546081
+    Attrib Partner=No    12.581739355859364
+    Attrib Dependents=Yes    14.440610886482185
+    Attrib tenure    5.536350720600978
+    Attrib PhoneService=Yes    -11.44274145866319
+    Attrib MultipleLines=No phone service    11.49829903459773
+    Attrib MultipleLines=No    5.648722457693192
+    Attrib MultipleLines=Yes    -11.038442855194305
+    Attrib InternetService=DSL    1.4296658339980415
+    Attrib InternetService=Fiber optic    0.4390799596643634
+    Attrib InternetService=No    4.230326676954186
+    Attrib OnlineSecurity=No    -1.563973178086264
+    Attrib OnlineSecurity=Yes    3.4381410246561295
+    Attrib OnlineSecurity=No internet service    4.2980976544917775
+    Attrib OnlineBackup=Yes    2.0780519030684856
+    Attrib OnlineBackup=No    -0.18653554401678896
+    Attrib OnlineBackup=No internet service    4.273838482186528
+    Attrib DeviceProtection=No    1.574893297070733
+    Attrib DeviceProtection=Yes    0.24032063024116837
+    Attrib DeviceProtection=No internet service    4.277956647279907
+    Attrib TechSupport=No    -9.766799681081837
+    Attrib TechSupport=Yes    11.663288775242476
+    Attrib TechSupport=No internet service    4.246673012533929
+    Attrib StreamingTV=No    15.90567670652075
+    Attrib StreamingTV=Yes    -14.063311501287679
+    Attrib StreamingTV=No internet service    4.243785417405174
+    Attrib StreamingMovies=No    -2.855999354198061
+    Attrib StreamingMovies=Yes    4.673463815996571
+    Attrib StreamingMovies=No internet service    4.245930417696405
+    Attrib Contract=Month-to-month    -16.71725425752226
+    Attrib Contract=One year    16.614479769901905
+    Attrib Contract=Two year    6.168272723671002
+    Attrib PaperlessBilling=No    17.88443384337833
+    Attrib PaymentMethod=Electronic check    11.937073507130709
+    Attrib PaymentMethod=Mailed check    11.828532613031253
+    Attrib PaymentMethod=Bank transfer (automatic)    -11.070529329734754
+    Attrib PaymentMethod=Credit card (automatic)    -0.5063443902425634
+    Attrib MonthlyCharges    -2.2766534248962023
+    Attrib TotalCharges    7.09464261707584
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -7.123211760601827
+    Attrib gender=Male    0.10479881895567694
+    Attrib SeniorCitizen    6.3376503360374
+    Attrib Partner=No    -10.509763825686202
+    Attrib Dependents=Yes    4.6052827043871005
+    Attrib tenure    31.076448972793756
+    Attrib PhoneService=Yes    10.06717703934935
+    Attrib MultipleLines=No phone service    -10.096945207113361
+    Attrib MultipleLines=No    15.796791685592595
+    Attrib MultipleLines=Yes    1.5193299379084606
+    Attrib InternetService=DSL    16.697647131704333
+    Attrib InternetService=Fiber optic    -12.984163916797652
+    Attrib InternetService=No    3.395597210664485
+    Attrib OnlineSecurity=No    -16.810960993730053
+    Attrib OnlineSecurity=Yes    20.537930448015818
+    Attrib OnlineSecurity=No internet service    3.4068618488206828
+    Attrib OnlineBackup=Yes    8.683663433383442
+    Attrib OnlineBackup=No    -4.884123190682985
+    Attrib OnlineBackup=No internet service    3.376173344410583
+    Attrib DeviceProtection=No    -11.572483008690451
+    Attrib DeviceProtection=Yes    15.354091327597736
+    Attrib DeviceProtection=No internet service    3.347890207086197
+    Attrib TechSupport=No    -7.541185867029411
+    Attrib TechSupport=Yes    11.306980866514103
+    Attrib TechSupport=No internet service    3.3578873522703057
+    Attrib StreamingTV=No    9.437490182164094
+    Attrib StreamingTV=Yes    -5.610135650715865
+    Attrib StreamingTV=No internet service    3.4150485677714975
+    Attrib StreamingMovies=No    -4.281505325280961
+    Attrib StreamingMovies=Yes    8.06878852953894
+    Attrib StreamingMovies=No internet service    3.3577683040271116
+    Attrib Contract=Month-to-month    2.751954984863064
+    Attrib Contract=One year    -10.696378561235406
+    Attrib Contract=Two year    15.10183200843443
+    Attrib PaperlessBilling=No    15.96769277382659
+    Attrib PaymentMethod=Electronic check    3.3440524540959893
+    Attrib PaymentMethod=Mailed check    0.7861905167418897
+    Attrib PaymentMethod=Bank transfer (automatic)    15.22975352004073
+    Attrib PaymentMethod=Credit card (automatic)    -5.083917630746261
+    Attrib MonthlyCharges    1.890770088709443
+    Attrib TotalCharges    24.985014300933077
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    -5.914388703740483
+    Attrib gender=Male    12.596123928573421
+    Attrib SeniorCitizen    -18.72691710546667
+    Attrib Partner=No    3.342527321810837
+    Attrib Dependents=Yes    3.3481546791862415
+    Attrib tenure    21.2937406061477
+    Attrib PhoneService=Yes    1.9870323544441588
+    Attrib MultipleLines=No phone service    -1.9938705984111147
+    Attrib MultipleLines=No    9.748189291541074
+    Attrib MultipleLines=Yes    -1.8064371265363561
+    Attrib InternetService=DSL    8.58480266099024
+    Attrib InternetService=Fiber optic    -11.536006897077085
+    Attrib InternetService=No    8.837023061320002
+    Attrib OnlineSecurity=No    -7.004576236492133
+    Attrib OnlineSecurity=Yes    4.036446043507514
+    Attrib OnlineSecurity=No internet service    8.883027888027305
+    Attrib OnlineBackup=Yes    13.496446758705435
+    Attrib OnlineBackup=No    -16.513250805418068
+    Attrib OnlineBackup=No internet service    8.865176949316643
+    Attrib DeviceProtection=No    17.1567467616609
+    Attrib DeviceProtection=Yes    -20.067081518590488
+    Attrib DeviceProtection=No internet service    8.867599328691194
+    Attrib TechSupport=No    0.06970453679732667
+    Attrib TechSupport=Yes    -2.985885884858854
+    Attrib TechSupport=No internet service    8.880005685433646
+    Attrib StreamingTV=No    -15.604784139239344
+    Attrib StreamingTV=Yes    12.673295908481066
+    Attrib StreamingTV=No internet service    8.823293771393617
+    Attrib StreamingMovies=No    -5.400184828706302
+    Attrib StreamingMovies=Yes    2.4692824202382977
+    Attrib StreamingMovies=No internet service    8.811441933391306
+    Attrib Contract=Month-to-month    -1.9338329494096835
+    Attrib Contract=One year    3.0232000662271186
+    Attrib Contract=Two year    4.875418058835499
+    Attrib PaperlessBilling=No    14.830107694747838
+    Attrib PaymentMethod=Electronic check    -3.9055080652134206
+    Attrib PaymentMethod=Mailed check    15.019117588143779
+    Attrib PaymentMethod=Bank transfer (automatic)    21.028097333853115
+    Attrib PaymentMethod=Credit card (automatic)    -20.26639843931276
+    Attrib MonthlyCharges    -4.049406177149115
+    Attrib TotalCharges    1.1270316311948863
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    -0.0053659647785303105
+    Attrib gender=Male    -7.399304825578265
+    Attrib SeniorCitizen    -16.330379750888792
+    Attrib Partner=No    -18.08036539934993
+    Attrib Dependents=Yes    -3.5068898036618052
+    Attrib tenure    35.620941433581
+    Attrib PhoneService=Yes    -3.489586645695665
+    Attrib MultipleLines=No phone service    3.5501441394737467
+    Attrib MultipleLines=No    12.013492429800753
+    Attrib MultipleLines=Yes    -15.490465227451159
+    Attrib InternetService=DSL    0.5911600412885768
+    Attrib InternetService=Fiber optic    -9.019080974104144
+    Attrib InternetService=No    8.434410451177556
+    Attrib OnlineSecurity=No    -3.896739161941726
+    Attrib OnlineSecurity=Yes    -4.463264252735514
+    Attrib OnlineSecurity=No internet service    8.346303178687428
+    Attrib OnlineBackup=Yes    -10.694993022090225
+    Attrib OnlineBackup=No    2.2715170056464284
+    Attrib OnlineBackup=No internet service    8.406375465916593
+    Attrib DeviceProtection=No    -9.08690420537839
+    Attrib DeviceProtection=Yes    0.7133691966612435
+    Attrib DeviceProtection=No internet service    8.372959460125198
+    Attrib TechSupport=No    -2.965754224731733
+    Attrib TechSupport=Yes    -5.371215486032323
+    Attrib TechSupport=No internet service    8.407747557101263
+    Attrib StreamingTV=No    -10.049184048151352
+    Attrib StreamingTV=Yes    1.6747786281908552
+    Attrib StreamingTV=No internet service    8.435980121705182
+    Attrib StreamingMovies=No    4.6214585843737455
+    Attrib StreamingMovies=Yes    -13.059531287883162
+    Attrib StreamingMovies=No internet service    8.418893663794933
+    Attrib Contract=Month-to-month    -10.898325643704943
+    Attrib Contract=One year    4.68308054928745
+    Attrib Contract=Two year    6.131513960964283
+    Attrib PaperlessBilling=No    -15.92386489298757
+    Attrib PaymentMethod=Electronic check    -20.375977192558405
+    Attrib PaymentMethod=Mailed check    13.456988639865326
+    Attrib PaymentMethod=Bank transfer (automatic)    -3.3787334629561863
+    Attrib PaymentMethod=Credit card (automatic)    10.284306161777412
+    Attrib MonthlyCharges    -4.9923661980670415
+    Attrib TotalCharges    14.13970414747223
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    2.2174158835561917
+    Attrib gender=Male    -3.439126761847742
+    Attrib SeniorCitizen    -21.539866634822328
+    Attrib Partner=No    18.062644155027904
+    Attrib Dependents=Yes    13.184721784990819
+    Attrib tenure    37.469124698808834
+    Attrib PhoneService=Yes    -16.1930023109741
+    Attrib MultipleLines=No phone service    16.230659283150686
+    Attrib MultipleLines=No    -16.33651677775793
+    Attrib MultipleLines=Yes    -2.076551954321634
+    Attrib InternetService=DSL    -10.554076586396098
+    Attrib InternetService=Fiber optic    9.370014321899268
+    Attrib InternetService=No    -0.9947415039447632
+    Attrib OnlineSecurity=No    -14.71552590899939
+    Attrib OnlineSecurity=Yes    13.518761876043728
+    Attrib OnlineSecurity=No internet service    -0.9511109511034538
+    Attrib OnlineBackup=Yes    -21.43824618747829
+    Attrib OnlineBackup=No    20.18666746893011
+    Attrib OnlineBackup=No internet service    -0.9627300756052043
+    Attrib DeviceProtection=No    -0.06430843058505742
+    Attrib DeviceProtection=Yes    -1.1031287947194208
+    Attrib DeviceProtection=No internet service    -1.0323324231713533
+    Attrib TechSupport=No    -10.768396841182012
+    Attrib TechSupport=Yes    9.488534268590222
+    Attrib TechSupport=No internet service    -0.9886779182423399
+    Attrib StreamingTV=No    13.488608432014214
+    Attrib StreamingTV=Yes    -14.727824599229871
+    Attrib StreamingTV=No internet service    -0.9442820815746759
+    Attrib StreamingMovies=No    4.5524644001657375
+    Attrib StreamingMovies=Yes    -5.8806739868759905
+    Attrib StreamingMovies=No internet service    -0.996469968892317
+    Attrib Contract=Month-to-month    -24.77405599926773
+    Attrib Contract=One year    23.83566351112258
+    Attrib Contract=Two year    -1.332908355505219
+    Attrib PaperlessBilling=No    -11.864182024695584
+    Attrib PaymentMethod=Electronic check    -4.154969500341992
+    Attrib PaymentMethod=Mailed check    -3.1801893692066683
+    Attrib PaymentMethod=Bank transfer (automatic)    3.432644672772665
+    Attrib PaymentMethod=Credit card (automatic)    -0.6539312974632706
+    Attrib MonthlyCharges    -2.704083422516368
+    Attrib TotalCharges    23.08872991859704
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    -1.2516731647935462
+    Attrib gender=Male    21.63936425113945
+    Attrib SeniorCitizen    -6.668115053356463E-4
+    Attrib Partner=No    16.791458826225398
+    Attrib Dependents=Yes    11.49480446899581
+    Attrib tenure    -1.136111106272608
+    Attrib PhoneService=Yes    -6.916254241593486
+    Attrib MultipleLines=No phone service    6.918404581226743
+    Attrib MultipleLines=No    0.8949231187353394
+    Attrib MultipleLines=Yes    -6.567694904809305
+    Attrib InternetService=DSL    -2.332909579544178
+    Attrib InternetService=Fiber optic    -0.4666204805123157
+    Attrib InternetService=No    4.046561376000699
+    Attrib OnlineSecurity=No    -8.001064897237484
+    Attrib OnlineSecurity=Yes    5.1979482286998655
+    Attrib OnlineSecurity=No internet service    4.025460175856399
+    Attrib OnlineBackup=Yes    0.6415651185786114
+    Attrib OnlineBackup=No    -3.365785814475881
+    Attrib OnlineBackup=No internet service    4.084971635649771
+    Attrib DeviceProtection=No    -7.191475553921816
+    Attrib DeviceProtection=Yes    4.463239503294989
+    Attrib DeviceProtection=No internet service    4.0119287431082515
+    Attrib TechSupport=No    -2.400605739316321
+    Attrib TechSupport=Yes    -0.3819128403629338
+    Attrib TechSupport=No internet service    4.030605055983096
+    Attrib StreamingTV=No    -7.626094366098662
+    Attrib StreamingTV=Yes    4.9117302865915695
+    Attrib StreamingTV=No internet service    4.079837819593171
+    Attrib StreamingMovies=No    -2.057601410778616
+    Attrib StreamingMovies=Yes    -0.6619226224398614
+    Attrib StreamingMovies=No internet service    4.074373348484715
+    Attrib Contract=Month-to-month    -24.078932910908918
+    Attrib Contract=One year    2.127853804864566
+    Attrib Contract=Two year    23.206815634046404
+    Attrib PaperlessBilling=No    22.95843745844606
+    Attrib PaymentMethod=Electronic check    7.967937584629192
+    Attrib PaymentMethod=Mailed check    -9.513268085480947
+    Attrib PaymentMethod=Bank transfer (automatic)    -10.422072539542334
+    Attrib PaymentMethod=Credit card (automatic)    14.526667885607633
+    Attrib MonthlyCharges    -2.455701840194035
+    Attrib TotalCharges    -3.133561531091223
+Sigmoid Node 22
+    Inputs    Weights
+    Threshold    -7.914880218755882
+    Attrib gender=Male    2.163677242616898
+    Attrib SeniorCitizen    -0.6103208143634997
+    Attrib Partner=No    5.76301469807297
+    Attrib Dependents=Yes    -4.7146017741206805
+    Attrib tenure    12.94893716309525
+    Attrib PhoneService=Yes    4.831882456768022
+    Attrib MultipleLines=No phone service    -4.857766159926938
+    Attrib MultipleLines=No    4.78892871654962
+    Attrib MultipleLines=Yes    8.019338410466071
+    Attrib InternetService=DSL    10.932888097704112
+    Attrib InternetService=Fiber optic    -7.010647679704971
+    Attrib InternetService=No    3.9296695348936006
+    Attrib OnlineSecurity=No    -5.17162979725805
+    Attrib OnlineSecurity=Yes    9.142779514310405
+    Attrib OnlineSecurity=No internet service    3.9799017379969297
+    Attrib OnlineBackup=Yes    1.7455840176558126
+    Attrib OnlineBackup=No    2.1623654613060186
+    Attrib OnlineBackup=No internet service    3.9771135297153957
+    Attrib DeviceProtection=No    -14.261845209236585
+    Attrib DeviceProtection=Yes    18.193235147154628
+    Attrib DeviceProtection=No internet service    3.967646425659082
+    Attrib TechSupport=No    -7.232037497198705
+    Attrib TechSupport=Yes    11.153780599875596
+    Attrib TechSupport=No internet service    4.013468821458063
+    Attrib StreamingTV=No    -4.994569537060548
+    Attrib StreamingTV=Yes    8.904146449440313
+    Attrib StreamingTV=No internet service    3.9377189549317406
+    Attrib StreamingMovies=No    17.940604221349535
+    Attrib StreamingMovies=Yes    -14.059735743191212
+    Attrib StreamingMovies=No internet service    3.9886970135068958
+    Attrib Contract=Month-to-month    -12.053092595653466
+    Attrib Contract=One year    14.867432944887417
+    Attrib Contract=Two year    5.187638476867198
+    Attrib PaperlessBilling=No    22.899276297357904
+    Attrib PaymentMethod=Electronic check    4.197345423034869
+    Attrib PaymentMethod=Mailed check    2.875010838756806
+    Attrib PaymentMethod=Bank transfer (automatic)    10.970419259464032
+    Attrib PaymentMethod=Credit card (automatic)    -2.213684640302644
+    Attrib MonthlyCharges    0.8501996125107327
+    Attrib TotalCharges    8.65597240127945
+Class No
+    Input
+    Node 0
+Class Yes
+    Input
+    Node 1
+
+
+Time taken to build model: 52.63 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        5462               77.5522 %
+Incorrectly Classified Instances      1581               22.4478 %
+Kappa statistic                          0.4265
+Mean absolute error                      0.2425
+Root mean squared error                  0.4224
+Relative absolute error                 62.1991 %
+Root relative squared error             95.6652 %
+Total Number of Instances             7043     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.845    0.417    0.849      0.845    0.847      0.427    0.808     0.919     No
+                 0.583    0.155    0.576      0.583    0.580      0.427    0.808     0.550     Yes
+Weighted Avg.    0.776    0.347    0.776      0.776    0.776      0.427    0.808     0.821     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4372  802 |    a = No
+  779 1090 |    b = Yes
+
